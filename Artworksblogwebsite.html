@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Art Blog</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+            padding-bottom: 60px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: #00796b; 
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            border-bottom: 4px solid #004d40;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 80px;
+            width: 80px;
+            margin-right: 15px;
+        }
+
+        header h1 {
+            font-family: 'Lucida', cursive;
+            font-size: 36px;
+            margin-left: 15px;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        header nav ul li {
+            margin-right: 25px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        header nav ul li a img {
+            height: 24px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+        }
+        .recent-dishes {
+            width: 25%;
+            margin-right: 10px;
+        }
+
+        .recent-dishes h2 {
+            border-left: 5px solid #ffab91; 
+            padding-left: 10px;
+            font-size: 30px;
+            margin-bottom: 15px;
+            font-family: 'Georgia', serif;
+        }
+
+        .recent-dishes ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recent-dishes ul li {
+            margin-bottom: 15px;
+        }
+
+        .recent-dishes ul li a {
+            text-decoration: none;
+            color: #e57373; 
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 1.5;
+            transition: color 0.3s;
+        }
+
+        .recent-dishes ul li a:hover {
+            color: #ff8a80;
+        }
+
+        .featured-posts {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .featured-posts .post {
+            width: 32%;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            padding: 15px;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .featured-posts .post img {
+            width: 100%;
+            height: 300px;
+            display: block;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        .featured-posts .post h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+            font-family: 'Georgia', serif;
+            color: #00796b;
+        }
+
+        .featured-posts .post p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        /* Footer Styles */
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: #00796b; 
+            padding: 15px 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            z-index: 999;
+        }
+
+        footer .text span {
+            font-size: 17px;
+            font-weight: 400;
+            color: white;
+        }
+
+        footer .text span a {
+            font-weight: 500;
+            color: white;
+        }
+
+        footer .text span a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="C:\Users\shrey\Downloads\logoart.jpg" alt="Art Blog Logo">
+                <h1>Artworks<h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#recent-dishes">Artworks</a></li>
+                    <li><a href="#featured-posts">Featured Art</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="recent-dishes" class="recent-dishes">
+            <h2>Latest Artworks</h2>
+            <ul>
+                <li><a href="https://www.chronicle.com/article/why-abstract-painting-still-matters/">Abstract Painting</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Modern_sculpture#:~:text=Modernist%20sculpture%20movements%20include%20Art,and%20Installation%20art%20among%20others.">Modern Sculpture</a></li>
+                <li><a href="https://www.adobe.com/in/creativecloud/photography/discover/landscape-photography.html#:~:text=A%20good%20landscape%20shot%20requires,to%20walk%20around%20in%20it.">Landscape Photography</a></li>
+            </ul>
+        </section>
+        
+        <section id="featured-posts" class="featured-posts">
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\Abstract Painting.png" alt="Featured Art 1">
+                <h3>Abstract Painting</h3>
+                <h3><a href="https://www.amazon.in/s?k=abstract+art+amazon&adgrpid=72234421818&ext_vrnc=hi&hvadid=590594040684&hvdev=c&hvlocphy=9300104&hvnetw=g&hvqmt=e&hvrand=5422936798029871902&hvtargid=kwd-337078748310&hydadcr=24564_2265423&tag=googinhydr1-21&ref=pd_sl_8cep05xlkl_e">Buy Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\Modern Sculpture.jpeg" alt="Featured Art 2">
+                <h3>Modern Sculpture</h3>
+                <h3><a href="https://www.amazon.in/s?k=decorative+sculpture&adgrpid=60014841998&ext_vrnc=hi&hvadid=590914771591&hvdev=c&hvlocphy=9300104&hvnetw=g&hvqmt=b&hvrand=16532480315525784057&hvtargid=kwd-89467934&hydadcr=11502_2336688&tag=googinhydr1-21&ref=pd_sl_24h4b2dtjn_b">Buy Now</a></h3>
+            </div>
+            <div class="post">
+                <img src="C:\Users\shrey\Downloads\Landscape Photography.jpg" alt="Featured Art 3">
+                <h3>Landscape Photography</h3>
+                <h3><a href="https://www.amazon.in/s?k=landscape+painting+amazon&adgrpid=154490196162&hvadid=671649740125&hvdev=c&hvlocphy=9300104&hvnetw=g&hvqmt=e&hvrand=8055110642139475015&hvtargid=kwd-1600234772153&hydadcr=9509_2211574&tag=googinhydr1-21&ref=pd_sl_31tkz4grzv_e">Buy Now</a></h3>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="text">
+            <span>Created By <a href="#">Geetheshw Martha</a> | &#169; All Rights Reserved</span>
+        </div>
+    </footer>
+</body>
+</html>
